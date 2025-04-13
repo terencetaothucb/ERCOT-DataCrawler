@@ -2,8 +2,8 @@ name: Run Crawler Every Even Hour
 
 on:
   schedule:
-    # 每两个小时执行一次任务，从1:57开始
-    - cron: '57 1-23/2 * * *'  # 在每个奇数小时的57分触发
+    # Execute the task every two hours, starting at 1:57, that is, it is triggered at 57 minutes of every odd hour
+    - cron: '57 1-23/2 * * *'  
 
 jobs:
   build:
